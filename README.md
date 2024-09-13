@@ -17,11 +17,11 @@ A Shopping cart template built using Asp.Net Core 3.0 with Razor Pages and Blazo
 </ul>
 <br>
 <h2>Features</h2>
-View and Add ratings to each Product
+<h3>View and Add ratings to each Product</h3>
 <img src="readme/addrating.png">
 <hr>
-Add Product to Cart
+<h3>Add Product to Cart</h3>
 <img src="readme/addtocart.png">
 <hr>
-Remove Product from Cart
-<img src-"readme/removecart.png">
+<h3>Remove Product from Cart</h3>
+<img src-"readme/mycart.png">
