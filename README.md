@@ -24,4 +24,5 @@ A Shopping cart template built using Asp.Net Core 3.0 with Razor Pages and Blazo
 <img src="readme/addtocart.png">
 <hr>
 <h3>Remove Product from Cart</h3>
-<img src-"readme/mycart.png">
+<img src="mycart.png">
+<hr>
