@@ -1,9 +1,9 @@
 <h1>View the website by clicking the link below:</h1>
 <h3><a href="http://Aspnetshoppingcart.somee.com">http://Aspnetshoppingcart.somee.com</a></h3>
-<hr>
+<br>
 <h2>Brief Overview</h2>
-A Shopping cart template built using Asp.Net Core 3.0 with Razor Pages and Blazor Components. The template allows you to view multiple products, add ratings, add products to your cart, remove products, and view the cart total. 
-<hr>
+A Shopping cart template built using Asp.Net Core 3.0 with Razor Pages and Blazor Components. Users can enter their product names, descriptions, and prices. The template allows you to view multiple products, add ratings, add products to your cart, remove products, and view the cart total. 
+<br>
 <h2>Technologies Used</h2>
 <ul>
   <li>Asp.Net Core 3.0</li>
@@ -13,4 +13,15 @@ A Shopping cart template built using Asp.Net Core 3.0 with Razor Pages and Blazo
   <li>Bootstrap- 4.3.1</li>
   <li>HTML</li>
   <li>CSS</li>
+  <li>Website hosted through somee.com</li>
 </ul>
+<br>
+<h2>Features</h2>
+View and Add ratings to each Product
+<img src="">
+<hr>
+Add Product to Cart
+<img src="">
+<hr>
+Remove Product from Cart
+<img src-"">
