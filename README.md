@@ -3,7 +3,7 @@
 <br>
 <h2>Brief Overview</h2>
 A Shopping cart template built using Asp.Net Core 3.0 with Razor Pages and Blazor Components. Users can enter their product names, descriptions, and prices. The template allows you to view multiple products, add ratings, add products to your cart, remove products, and view the cart total. 
-<br>
+
 <h2>Technologies Used</h2>
 <ul>
   <li>Asp.Net Core 3.0</li>
