@@ -1,0 +1,127 @@
+[
+  {
+    "Id": "1",
+    "Img": "https://img.freepik.com/free-photo/strawberries-cut-half-whole-berries-ripe-berries-top-view-background-ripe-strawberries-delicious-natural-dessert_166373-2358.jpg?t=st=1726070579~exp=1726074179~hmac=b61f4d8e5404aae6e57deff63cb47c5d2117184257998d2fa865e931dfe80584\u0026w=360",
+    "Title": "Enter Title",
+    "Description": "Enter description here. You can remove this and write your product description.",
+    "Price": 100,
+    "Ratings": [
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "Id": "2",
+    "Img": "https://img.freepik.com/free-photo/closeup-vertical-shot-blueberries-with-water-droplets-leaves_181624-742.jpg?t=st=1726070803~exp=1726074403~hmac=478351938601f56fb5c82dd679db72ec4d8fc7b174550ac6e957d564d48964c6\u0026w=360",
+    "Title": "Enter Title",
+    "Description": "Enter description here. You can remove this and write your product description.",
+    "Price": 200,
+    "Ratings": [
+      1,
+      2,
+      2,
+      5
+    ]
+  },
+  {
+    "Id": "3",
+    "Img": "https://img.freepik.com/free-photo/top-view-yummy-lemons-arrangement_23-2149433490.jpg?t=st=1726070903~exp=1726074503~hmac=eab24c6e006b8e14682a453c402b11e1b6e6cb0ed86d6e761fdbda43d4f2af08\u0026w=360",
+    "Title": "Enter Title",
+    "Description": "Enter description here. You can remove this and write your product description.",
+    "Price": 300,
+    "Ratings": [
+      2
+    ]
+  },
+  {
+    "Id": "4",
+    "Img": "https://img.freepik.com/free-photo/citrus-mandarin-fruit-closeup-ripe_1232-4549.jpg?t=st=1726071060~exp=1726074660~hmac=c5ae02a76447dfe2f1b94432450d980174ccf3c6e0acc1bdc24622680bcabcca\u0026w=360",
+    "Title": "Enter Title",
+    "Description": "Enter description here. You can remove this and write your product description.",
+    "Price": 400,
+    "Ratings": [
+      3
+    ]
+  },
+  {
+    "Id": "5",
+    "Img": "https://img.freepik.com/free-photo/apricots-wicker-baskets-wooden-table-top-view_176474-9165.jpg?t=st=1726074163~exp=1726077763~hmac=a576288671a3745b611fdd1bdb27aaf6b8c516ff12cfd671a199f186f1b9924a\u0026w=360",
+    "Title": "Enter Title",
+    "Description": "Enter description here. You can remove this and write your product description.",
+    "Price": 500,
+    "Ratings": [
+      4
+    ]
+  },
+  {
+    "Id": "6",
+    "Img": "https://img.freepik.com/free-photo/closeup-shot-purple-green-fresh-fig-basket_181624-43506.jpg?t=st=1726072284~exp=1726075884~hmac=1087c09b5637b32504f03097a4772bbc2ad94911d9ba69d8f0f080b31de77642\u0026w=360",
+    "Title": "Enter Title",
+    "Description": "Enter description here. You can remove this and write your product description.",
+    "Price": 600,
+    "Ratings": [
+      5
+    ]
+  },
+  {
+    "Id": "7",
+    "Img": "https://img.freepik.com/free-photo/top-view-apple-mix-green-yellow-red-apples_141793-6996.jpg?t=st=1726072638~exp=1726076238~hmac=e432cfc8dffcd7d0fcdaa436a514e2dd532fcc118433c3a6c04681d602fd7106\u0026w=360",
+    "Title": "Enter Title",
+    "Description": "Enter description here. You can remove this and write your product description.",
+    "Price": 700,
+    "Ratings": [
+      5
+    ]
+  },
+  {
+    "Id": "8",
+    "Img": "https://img.freepik.com/free-photo/lychee-fruit-close-up_1150-13611.jpg?t=st=1726072160~exp=1726075760~hmac=4aec2cd1f8f7c8ea4e90441443510736dafcb00e5346ad92bd8729db7e69a2aa\u0026w=360",
+    "Title": "Enter Title",
+    "Description": "Enter description here. You can remove this and write your product description.",
+    "Price": 800,
+    "Ratings": [
+      5
+    ]
+  },
+  {
+    "Id": "9",
+    "Img": "https://img.freepik.com/free-photo/juicy-apples-wicker-basket-wooden-background-close-up_176474-9769.jpg?t=st=1726074064~exp=1726077664~hmac=167a429312e8878ebd85c9dd1aaaa169d0e35d1fa04eb26ddc6942ed6c919710\u0026w=360",
+    "Title": "Enter Title",
+    "Description": "Enter description here. You can remove this and write your product description.",
+    "Price": 900,
+    "Ratings": [
+      5
+    ]
+  },
+  {
+    "Id": "10",
+    "Img": "https://img.freepik.com/free-photo/fresh-coconuts_144627-31708.jpg?t=st=1726072940~exp=1726076540~hmac=e23829074db496c898528ab619413d2071382cbb3168ce9d252175668e9e1cf4\u0026w=360",
+    "Title": "Enter Title",
+    "Description": "Enter description here. You can remove this and write your product description.",
+    "Price": 1000,
+    "Ratings": [
+      5
+    ]
+  },
+  {
+    "Id": "11",
+    "Img": "https://img.freepik.com/free-photo/pineapples-with-juice-candied-rings_176474-8804.jpg?t=st=1726072756~exp=1726076356~hmac=4bafe183ab7543b9ea0b6f5674984d67bba47eb639b8a657d5db55f60f7e894f\u0026w=360",
+    "Title": "Enter Title",
+    "Description": "Enter description here. You can remove this and write your product description.",
+    "Price": 1100,
+    "Ratings": [
+      5
+    ]
+  },
+  {
+    "Id": "12",
+    "Img": "https://img.freepik.com/free-photo/side-view-pomegranates-seeds-pomegranate-three-pomegranates-with-leaves-wooden-board_140725-123070.jpg?t=st=1726073128~exp=1726076728~hmac=9df788d96c6d1b7f18d4739abf93189ef949c249870b9dd863a0ecd104015a1f\u0026w=360",
+    "Title": "Enter Title",
+    "Description": "Enter description here. You can remove this and write your product description.",
+    "Price": 1200,
+    "Ratings": [
+      5
+    ]
+  }
+]

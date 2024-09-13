@@ -1,0 +1,118 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Aditya Vikram Sharma\\Desktop\\personal_projects\\aspnet_shopping_cart\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C295E035-E135-4243-8F85-F2D67A28AC00}|aspnet_shopping_cart\\aspnet_shopping_cart.csproj|c:\\users\\aditya vikram sharma\\desktop\\personal_projects\\aspnet_shopping_cart\\aspnet_shopping_cart\\components\\productlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C295E035-E135-4243-8F85-F2D67A28AC00}|aspnet_shopping_cart\\aspnet_shopping_cart.csproj|solutionrelative:aspnet_shopping_cart\\components\\productlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C295E035-E135-4243-8F85-F2D67A28AC00}|aspnet_shopping_cart\\aspnet_shopping_cart.csproj|c:\\users\\aditya vikram sharma\\desktop\\personal_projects\\aspnet_shopping_cart\\aspnet_shopping_cart\\components\\shoppingcart.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C295E035-E135-4243-8F85-F2D67A28AC00}|aspnet_shopping_cart\\aspnet_shopping_cart.csproj|solutionrelative:aspnet_shopping_cart\\components\\shoppingcart.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C295E035-E135-4243-8F85-F2D67A28AC00}|aspnet_shopping_cart\\aspnet_shopping_cart.csproj|c:\\users\\aditya vikram sharma\\desktop\\personal_projects\\aspnet_shopping_cart\\aspnet_shopping_cart\\wwwroot\\data\\products.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C295E035-E135-4243-8F85-F2D67A28AC00}|aspnet_shopping_cart\\aspnet_shopping_cart.csproj|solutionrelative:aspnet_shopping_cart\\wwwroot\\data\\products.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C295E035-E135-4243-8F85-F2D67A28AC00}|aspnet_shopping_cart\\aspnet_shopping_cart.csproj|c:\\users\\aditya vikram sharma\\desktop\\personal_projects\\aspnet_shopping_cart\\aspnet_shopping_cart\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C295E035-E135-4243-8F85-F2D67A28AC00}|aspnet_shopping_cart\\aspnet_shopping_cart.csproj|solutionrelative:aspnet_shopping_cart\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C295E035-E135-4243-8F85-F2D67A28AC00}|aspnet_shopping_cart\\aspnet_shopping_cart.csproj|c:\\users\\aditya vikram sharma\\desktop\\personal_projects\\aspnet_shopping_cart\\aspnet_shopping_cart\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C295E035-E135-4243-8F85-F2D67A28AC00}|aspnet_shopping_cart\\aspnet_shopping_cart.csproj|solutionrelative:aspnet_shopping_cart\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C295E035-E135-4243-8F85-F2D67A28AC00}|aspnet_shopping_cart\\aspnet_shopping_cart.csproj|c:\\users\\aditya vikram sharma\\desktop\\personal_projects\\aspnet_shopping_cart\\aspnet_shopping_cart\\pages\\mycart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C295E035-E135-4243-8F85-F2D67A28AC00}|aspnet_shopping_cart\\aspnet_shopping_cart.csproj|solutionrelative:aspnet_shopping_cart\\pages\\mycart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 215,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Aditya Vikram Sharma\\Desktop\\personal_projects\\aspnet_shopping_cart\\aspnet_shopping_cart\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "aspnet_shopping_cart\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Aditya Vikram Sharma\\Desktop\\personal_projects\\aspnet_shopping_cart\\aspnet_shopping_cart\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "aspnet_shopping_cart\\wwwroot\\css\\site.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-11T17:09:27.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "products.json",
+              "DocumentMoniker": "C:\\Users\\Aditya Vikram Sharma\\Desktop\\personal_projects\\aspnet_shopping_cart\\aspnet_shopping_cart\\wwwroot\\data\\products.json",
+              "RelativeDocumentMoniker": "aspnet_shopping_cart\\wwwroot\\data\\products.json",
+              "ToolTip": "C:\\Users\\Aditya Vikram Sharma\\Desktop\\personal_projects\\aspnet_shopping_cart\\aspnet_shopping_cart\\wwwroot\\data\\products.json",
+              "RelativeToolTip": "aspnet_shopping_cart\\wwwroot\\data\\products.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAADeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-11T15:41:08.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ShoppingCart.razor",
+              "DocumentMoniker": "C:\\Users\\Aditya Vikram Sharma\\Desktop\\personal_projects\\aspnet_shopping_cart\\aspnet_shopping_cart\\Components\\ShoppingCart.razor",
+              "RelativeDocumentMoniker": "aspnet_shopping_cart\\Components\\ShoppingCart.razor",
+              "ToolTip": "C:\\Users\\Aditya Vikram Sharma\\Desktop\\personal_projects\\aspnet_shopping_cart\\aspnet_shopping_cart\\Components\\ShoppingCart.razor",
+              "RelativeToolTip": "aspnet_shopping_cart\\Components\\ShoppingCart.razor",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAwwF0AAABeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-08T09:34:47.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductList.razor",
+              "DocumentMoniker": "C:\\Users\\Aditya Vikram Sharma\\Desktop\\personal_projects\\aspnet_shopping_cart\\aspnet_shopping_cart\\Components\\ProductList.razor",
+              "RelativeDocumentMoniker": "aspnet_shopping_cart\\Components\\ProductList.razor",
+              "ToolTip": "C:\\Users\\Aditya Vikram Sharma\\Desktop\\personal_projects\\aspnet_shopping_cart\\aspnet_shopping_cart\\Components\\ProductList.razor",
+              "RelativeToolTip": "aspnet_shopping_cart\\Components\\ProductList.razor",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAAAEkAAABxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-08T08:05:23.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Mycart.cshtml",
+              "DocumentMoniker": "C:\\Users\\Aditya Vikram Sharma\\Desktop\\personal_projects\\aspnet_shopping_cart\\aspnet_shopping_cart\\Pages\\Mycart.cshtml",
+              "RelativeDocumentMoniker": "aspnet_shopping_cart\\Pages\\Mycart.cshtml",
+              "ToolTip": "C:\\Users\\Aditya Vikram Sharma\\Desktop\\personal_projects\\aspnet_shopping_cart\\aspnet_shopping_cart\\Pages\\Mycart.cshtml",
+              "RelativeToolTip": "aspnet_shopping_cart\\Pages\\Mycart.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-08T07:48:31.554Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Aditya Vikram Sharma\\Desktop\\personal_projects\\aspnet_shopping_cart\\aspnet_shopping_cart\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "aspnet_shopping_cart\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Aditya Vikram Sharma\\Desktop\\personal_projects\\aspnet_shopping_cart\\aspnet_shopping_cart\\Pages\\Index.cshtml",
+              "RelativeToolTip": "aspnet_shopping_cart\\Pages\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-08T04:57:10.014Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

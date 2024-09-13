@@ -1,0 +1,180 @@
+﻿@using Microsoft.AspNetCore.Components.Routing
+@using aspnet_shopping_cart.Components
+@using Microsoft.AspNetCore.Components.Web
+@using aspnet_shopping_cart.Models
+@using aspnet_shopping_cart.Services
+@inject CartService MyCartService
+@inject ProductService ProdService
+
+@* Separately adding navbar to reflect cart changes *@
+
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-navbar border-bottom box-shadow mb-3">
+    <NavLink class="nav-link" style="color:darkorchid; font-size: 30px" href="/">Shopping Cart</NavLink>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-3 mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+                <NavLink class="nav-link text-dark" href="/">Home</NavLink>
+            </li>
+            <li class="nav-item">
+                <NavLink class="nav-link text-dark" href="/Privacy">Privacy</NavLink>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2 mr-2" style="max-width: 200px" type="search" placeholder="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0 mr-2" type="submit">Search</button>
+        </form>
+        <div class="row mt-2 mt-lg-0">
+            <NavLink class="nav-link pr-0 text-dark" href="/Mycart"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></NavLink>
+            <span class="badge badge-light mr-2" style="height: 20px">@MyCartService.GetCart().Pcount</span>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="text-center">
+        <h1 class="display-4">Shopping Website</h1>
+        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    </div>
+
+    <div class="card-columns">    
+        @foreach (var product in ProdService.GetProducts())
+        {
+            <div class="card">
+                @* <div class="card-img" style="height: 200px;
+                                         border-bottom: 1px solid lightgrey;
+                                         background-color: #fbf4fd;
+                                         text-align: center">
+
+                    <p style="font-size: 100px">@product.Img</p> *@
+                <div class="card-img" style="height: 200px; border-bottom: 1px solid lightgrey; background-image: url('@product.Img')"></div>
+                <div class="card-body">
+                    <div class="row">
+                        <h5 class="card-title" style="margin-left:10px; width: 205px">@product.Title</h5>
+                        <h5 class="card-title" style="margin-left:10px">₹@product.Price</h5>
+                    </div>
+                    @if (product.Description.Length > 18)
+                    {
+                        <p class="card-text">@product.Description.Substring(0, 18)...</p>
+                    }
+                    else
+                    {
+                        <p class="card-text">@product.Description</p>
+                    }
+                </div>
+                <div class="card-footer">
+                    <div class="row">
+                        <div class="text-muted ml-2 mr-auto mt-2 mt-lg-0" style="width: 100px; margin-left: 5px">
+                            <a href="#" class="link-primary"
+                               @onclick="(e=> SelectProduct(product.Id))"
+                               data-toggle="modal" data-target="#productModal">More Info</a>
+                        </div>
+                        <a href="#" class="btn btn-success ml-3 mr-2 mt-2 mt-lg-0"
+                           @onclick="(e=> AddToCart(product.Id, product.Price))">Add To Cart</a>
+                    </div>
+
+                </div>
+            </div>
+        }
+    </div>
+
+    @if (selectProduct != null)
+    {
+        <!-- Modal -->
+        <div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="productCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="productTitle">@selectProduct.Title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="card">
+                            <div class="card-img" style="height: 300px; border-bottom: 1px solid lightgrey; background-image: url('@selectProduct.Img'); background-repeat: no-repeat; background-size: cover"></div>
+                            <div class="card-body">
+                                <p class="card-text">@selectProduct.Description</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        @if (voteCount == 0)
+                        {
+                            <span>Be the first to rate!!</span>
+                        }
+                        else
+                        {
+                            <span>@voteCount @voteLabel</span>
+                        }
+
+                        @for (int i = 1; i <= 5; i++)
+                        {
+                            int currentStar = i;
+                            if (i <= currentRating)
+                            {
+                                <span class="fa-star fa checked" aria-hidden="true" @onclick="(e=> SubmitRating(currentStar))"></span>
+                            }
+                            else
+                            {
+                                <span class="fa-star fa" aria-hidden="true" @onclick="(e=> SubmitRating(currentStar))"></span>
+                            }
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+
+    @code {
+        Product selectProduct;
+
+        void SelectProduct(string productId)
+        {
+            selectProduct = ProdService.GetProducts().First(x => x.Id == productId);
+            GetCurrentRating();
+        }
+
+        int currentRating = 0;
+        int voteCount = 0;
+        string voteLabel;
+
+        void GetCurrentRating()
+        {
+            if (selectProduct.Ratings == null)
+            {
+                currentRating = 0;
+                voteCount = 0;
+            }
+            else
+            {
+                voteCount = selectProduct.Ratings.Count();
+                currentRating = selectProduct.Ratings.Sum() / voteCount;
+                voteLabel = voteCount > 1 ? "Votes" : "Vote";
+            }
+            System.Console.WriteLine($"ProductId {selectProduct.Id}: {currentRating} with {voteCount} {voteLabel}");
+        }
+
+        void SubmitRating(int rating)
+        {
+            System.Console.WriteLine($"ProductId {selectProduct.Id}: {rating}");
+            ProdService.AddRatings(selectProduct.Id, rating);
+            SelectProduct(selectProduct.Id);
+        }
+
+
+        void AddToCart(string productId, float productPrice)
+        {
+            MyCartService.AddCart(productId, productPrice);
+        }
+    }
+
+</div>

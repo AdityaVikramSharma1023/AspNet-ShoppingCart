@@ -1,0 +1,117 @@
+﻿@using Microsoft.AspNetCore.Components.Routing
+@using aspnet_shopping_cart.Components
+@using Microsoft.AspNetCore.Components.Web
+@using aspnet_shopping_cart.Models
+@using aspnet_shopping_cart.Services
+@inject CartService MyCartService
+@inject ProductService ProdService
+
+@* Separately adding navbar to reflect cart changes *@
+
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-navbar border-bottom box-shadow mb-3">
+    <NavLink class="nav-link" style="color:darkorchid; font-size: 30px" href="/">Shopping Cart</NavLink>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-3 mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+                <NavLink class="nav-link text-dark" href="/">Home</NavLink>
+            </li>
+            <li class="nav-item">
+                <NavLink class="nav-link text-dark" href="/Privacy">Privacy</NavLink>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2 mr-2" style="max-width: 200px" type="search" placeholder="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0 mr-2" type="submit">Search</button>
+        </form>
+        <div class="row mt-2 mt-lg-0">
+            <NavLink class="nav-link pr-0 text-dark" href="/Mycart"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></NavLink>
+            <span class="badge badge-light mr-2" style="height: 20px">@MyCartService.GetCart().Pcount</span>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container">
+    <h1>My Cart</h1>
+    <hr />
+    @if (@MyCartService.GetCart().Pcount == 0)
+    {
+        <h3>Your Cart looks empty :(</h3>
+    }
+
+    @foreach (var items in MyCartService.GetCart().Products)
+    {
+        var product = ProdService.GetProducts().First(x => x.Id == items);
+
+            <div class="card mb-3" style="max-width: 600px;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img class="card-img" src="@product.Img" style=" height: 185px; object-fit: cover"/>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">@product.Title</h5>
+                            <p class="card-text">@product.Description</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="row">
+                            <h5 class="card-title ml-3 mr-auto mt-2 mt-lg-0">₹@product.Price</h5>
+                            <div class="card-text ml-3 mt-2 mt-lg-0">
+                                    @if (@product.Ratings.Count() == 0)
+                                    {
+                                        <span>No Ratings!!</span>
+                                    }
+                                    else if (@product.Ratings.Count() == 1)
+                                    {
+                                        <span>@product.Ratings.Count() Vote</span>
+                                    }
+                                    else
+                                    {
+                                        <span>@product.Ratings.Count() Votes</span>
+                                    }
+
+                                    @for (int i = 1; i <= 5; i++)
+                                    {
+                                        int currentStar = i;
+                                        if (i <= product.Ratings.Sum() / product.Ratings.Count())
+                                        {
+                                            <span class="fa-star fa checked" aria-hidden="true"></span>
+                                        }
+                                        else
+                                        {
+                                            <span class="fa-star fa" aria-hidden="true"></span>
+                                        }
+                                    }
+                                </div>
+                            <button type="button" class="btn btn-danger ml-3 mr-2 mt-2 mt-lg-0" @onclick="(e=> RemoveFromCart(product.Id, product.Price))">Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    }
+
+    <hr />
+    <div style="text-align: right">
+        <h3>Total Bill:   ₹@MyCartService.GetCart().Bill</h3>
+    </div>
+
+
+
+    @code {
+
+        void RemoveFromCart(string productId, float productPrice)
+        {
+            MyCartService.RemoveCart(productId, productPrice);
+        }
+    }
+
+</div>

@@ -1,0 +1,8 @@
+﻿@page
+@using aspnet_shopping_cart.Components
+@model aspnet_shopping_cart.Pages.MycartModel
+@{
+}
+
+@(await Html.RenderComponentAsync<ShoppingCart>(RenderMode.ServerPrerendered))
+<script src="_framework/blazor.server.js"></script>

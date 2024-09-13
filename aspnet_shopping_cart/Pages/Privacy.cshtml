@@ -1,0 +1,15 @@
+﻿@page
+@using aspnet_shopping_cart.Components
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+
+@(await Html.RenderComponentAsync<NavComponent>(RenderMode.ServerPrerendered))
+<script src="_framework/blazor.server.js"></script>
+
+<div class="container">
+    <h1>@ViewData["Title"]</h1>
+    <p>Use this page to detail your site's privacy policy.</p>
+</div>
+
